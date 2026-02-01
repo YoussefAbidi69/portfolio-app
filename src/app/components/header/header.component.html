@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="container header-container">
+        <a href="#" class="logo">Youssef<span>.</span></a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" [class.active]="isMenuOpen">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAV.HOME' |
+                        translate }}</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAV.SKILLS' |
+                        translate }}</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link" (click)="closeMenu()">{{
+                        'HEADER.NAV.EXPERIENCE' | translate }}</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link" (click)="closeMenu()">{{
+                        'HEADER.NAV.CERTIFICATIONS' | translate }}</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAV.PROJECTS'
+                        | translate }}</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link btn" (click)="closeMenu()">{{
+                        'HEADER.NAV.CONTACT' | translate }}</a></li>
+                <li class="nav-item"><app-language-switcher></app-language-switcher></li>
+            </ul>
+        </nav>
+    </div>
+</header>

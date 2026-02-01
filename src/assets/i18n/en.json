@@ -1,0 +1,94 @@
+{
+    "HERO": {
+        "GREETING": "Hi, I'm",
+        "ROLE": "Cloud & DevOps Engineer",
+        "DESCRIPTION": "I design resilient cloud infrastructures and high-performance automation pipelines. Expert in Kubernetes, Terraform, and AWS.",
+        "CTA_HIRE": "Hire Me",
+        "CTA_CV": "Download CV",
+        "STATS": {
+            "TECHNOS": "Technos",
+            "PROJECTS": "Projects",
+            "CERTS": "Certs"
+        }
+    },
+    "HEADER": {
+        "NAV": {
+            "HOME": "Home",
+            "SKILLS": "Skills",
+            "EXPERIENCE": "Experience",
+            "CERTIFICATIONS": "Certifications",
+            "PROJECTS": "Projects",
+            "CONTACT": "Contact"
+        }
+    },
+    "SKILLS": {
+        "SUBTITLE": "My Expertise",
+        "TITLE": "Technical Skills",
+        "S0": "IaC & Automation",
+        "S1": "OS & Scripting"
+    },
+    "EXPERIENCE": {
+        "SUBTITLE": "My Journey",
+        "TITLE": "Professional Experience",
+        "LIST": [
+            {
+                "ROLE": "Web Development Intern",
+                "COMPANY": "ASE (Autonomous Systems Engineering)",
+                "PERIOD": "August - September 2025",
+                "DESC": "Development of an autonomous web application for external visitor management: barcode and RFID reader integration, digital traceability, PDF/CSV reporting, and administration dashboard. Tech Stack: Angular, Spring Boot, MySQL, Git."
+            }
+        ]
+    },
+    "CERTIFICATIONS": {
+        "SUBTITLE": "Diplomas & Certs",
+        "TITLE": "Certifications",
+        "LIST": [
+            {
+                "NAME": "AWS Certified Cloud Practitioner",
+                "ISSUER": "Amazon Web Services",
+                "DATE": "2023"
+            },
+            {
+                "NAME": "Microsoft Certified: Azure Fundamentals",
+                "ISSUER": "Microsoft",
+                "DATE": "2023"
+            },
+            {
+                "NAME": "HashiCorp Certified: Terraform Associate",
+                "ISSUER": "HashiCorp",
+                "DATE": "2024"
+            }
+        ]
+    },
+    "PROJECTS": {
+        "SUBTITLE": "Portfolio",
+        "TITLE": "Recent Projects",
+        "CTA_CODE": "View on GitHub",
+        "CTA_DEMO": "Live Demo",
+        "LIST": [
+            {
+                "TITLE": "E-sport Web & Desktop Application",
+                "DESC": "Development of a web and desktop application for complete management of an E-sport service."
+            },
+            {
+                "TITLE": "Qt Desktop Application in C++",
+                "DESC": "Realization of a Qt application dedicated to factory management through an interactive model."
+            },
+            {
+                "TITLE": "Web Application",
+                "DESC": "Development of a web application ensuring management."
+            }
+        ]
+    },
+    "CONTACT": {
+        "SUBTITLE": "Contact",
+        "TITLE": "Let's Work Together",
+        "TEXT": "I am currently looking for an end-of-studies internship in Cloud Computing / DevOps. If you are interested in my profile, feel free to contact me!",
+        "CTA_EMAIL": "Contact Me via Email",
+        "CTA_LINKEDIN": "LinkedIn",
+        "CTA_GITHUB": "GitHub"
+    },
+    "FOOTER": {
+        "TEXT": "© 2026 Cloud Student Portfolio. Built with Angular."
+    }
+}

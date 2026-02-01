@@ -1,0 +1,21 @@
+.contact-section {
+    text-align: center;
+    /* background-color removed */
+}
+
+.contact-container {
+    max-width: 800px;
+}
+
+.contact-text {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}

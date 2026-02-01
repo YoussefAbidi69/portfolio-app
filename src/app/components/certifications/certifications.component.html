@@ -1,0 +1,17 @@
+<section id="certifications" class="certifications-section" appScrollReveal>
+    <div class="container">
+        <span class="section-subtitle">{{ 'CERTIFICATIONS.SUBTITLE' | translate }}</span>
+        <h2 class="section-title">{{ 'CERTIFICATIONS.TITLE' | translate }}</h2>
+
+        <div class="certs-grid">
+            <div class="cert-card" *ngFor="let cert of certifications" appTilt>
+                <div class="cert-icon">🏆</div>
+                <div class="cert-details">
+                    <h3>{{ cert.name | translate }}</h3>
+                    <p class="issuer">{{ cert.issuer | translate }}</p>
+                    <span class="date">{{ cert.date | translate }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

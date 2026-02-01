@@ -1,0 +1,8 @@
+.footer {
+    /* background-color: var(--secondary-color); Removed for global background */
+    color: var(--text-muted);
+    /* Ensure readability if it was depending on bg */
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+}

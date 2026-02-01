@@ -1,0 +1,22 @@
+<section id="projects" class="projects-section" appScrollReveal>
+    <div class="container">
+        <span class="section-subtitle">{{ 'PROJECTS.SUBTITLE' | translate }}</span>
+        <h2 class="section-title">{{ 'PROJECTS.TITLE' | translate }}</h2>
+
+        <div class="projects-grid">
+            <div class="project-card" *ngFor="let project of projects" appTilt>
+                <div class="project-content">
+                    <h3>{{ project.title | translate }}</h3>
+                    <p>{{ project.description | translate }}</p>
+                    <div class="tags">
+                        <span class="tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a [href]="project.link" target="_blank" class="btn btn-outline small">{{ 'PROJECTS.CTA_CODE' |
+                        translate }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

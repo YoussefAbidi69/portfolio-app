@@ -1,0 +1,260 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: relative;
+    /* background-color: var(--bg-color); Removed for global background */
+    padding-top: var(--header-height);
+    padding-top: var(--header-height);
+}
+
+
+
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    /* Content above canvas */
+}
+
+/* Cursor Animation */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: var(--primary-color);
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+.cursor.typing {
+    animation: none;
+    opacity: 1;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    /* Text larger than image */
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+}
+
+/* TEXT SIDE */
+.hero-role-tag {
+    color: var(--primary-color);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 243, 255, 0.1);
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    border-radius: var(--radius-sm);
+}
+
+.hero-role-tag::before {
+    content: '> root@portfolio:~$ ';
+    opacity: 0.7;
+    margin-right: 0.5rem;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.name-highlight {
+    color: var(--primary-color);
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.hero-cta-group {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* STATS ROW */
+.hero-stats-row {
+    display: flex;
+    gap: 4rem;
+}
+
+.stat-unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-num {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* IMAGE SIDE */
+.hero-image-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashed-circle-wrapper {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashed-circle-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotate 30s linear infinite;
+}
+
+.profile-img-container {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    /* background-color: #222; Fallback color */
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Decorative points like in the reference */
+.decoration-point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.top-right {
+    top: 15%;
+    right: 15%;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.bottom-left {
+    bottom: 20%;
+    left: 10%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 968px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-image-side {
+        order: -1;
+    }
+
+    .dashed-circle-wrapper {
+        width: 320px;
+        height: 320px;
+    }
+
+    .profile-img-container {
+        width: 270px;
+        height: 270px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-stats-row {
+        justify-content: center;
+        gap: 2rem;
+    }
+}

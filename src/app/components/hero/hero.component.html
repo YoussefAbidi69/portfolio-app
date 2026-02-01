@@ -1,0 +1,62 @@
+<section id="home" class="hero" appScrollReveal>
+    <div class="container hero-container">
+        <div class="hero-text-side">
+            <span class="hero-role-tag">{{ 'HERO.ROLE' | translate }}</span>
+            <h1 class="hero-title">
+                {{ displayHalo }} <br>
+                <span class="name-highlight">{{ displayName }}</span><span class="cursor"
+                    [class.typing]="isTyping">|</span>
+            </h1>
+
+            <p class="hero-description">
+                {{ 'HERO.DESCRIPTION' | translate }}
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#contact" class="btn btn-primary">{{ 'HERO.CTA_HIRE' | translate }}</a>
+                <a href="assets/cv_AbidiYoussef.pdf" download class="btn btn-outline" style="margin-right: 1.5rem;">{{
+                    'HERO.CTA_CV' | translate }}</a>
+
+                <div class="social-links">
+                    <a href="https://github.com/YoussefAbidi69" target="_blank" class="social-icon">GH</a>
+                    <a href="https://www.linkedin.com/in/youssef-abidi-/" target="_blank" class="social-icon">LI</a>
+                </div>
+            </div>
+
+            <div class="hero-stats-row">
+                <div class="stat-unit">
+                    <span class="stat-num">{{ technosCount }}+</span>
+                    <span class="stat-desc">{{ 'HERO.STATS.TECHNOS' | translate }}</span>
+                </div>
+                <div class="stat-unit">
+                    <span class="stat-num">{{ projectsCount }}+</span>
+                    <span class="stat-desc">{{ 'HERO.STATS.PROJECTS' | translate }}</span>
+                </div>
+
+                <div class="stat-unit">
+                    <span class="stat-num">{{ certificationsCount }}+</span>
+                    <span class="stat-desc">{{ 'HERO.STATS.CERTS' | translate }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-side">
+            <div class="dashed-circle-wrapper">
+                <!-- The rotating dashed border -->
+                <svg class="dashed-circle-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="48" stroke="var(--primary-color)" stroke-width="0.5" fill="none"
+                        stroke-dasharray="4, 8" />
+                </svg>
+
+                <!-- The Image -->
+                <div class="profile-img-container">
+                    <img src="assets/images/p.png" alt="Youssef ABIDI" class="profile-img">
+                </div>
+
+                <!-- Decorative accents -->
+                <div class="decoration-point top-right"></div>
+                <div class="decoration-point bottom-left"></div>
+            </div>
+        </div>
+    </div>
+</section>

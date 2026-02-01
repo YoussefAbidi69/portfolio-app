@@ -1,0 +1,20 @@
+<section id="skills" class="skills-section" appScrollReveal>
+    <div class="container">
+        <span class="section-subtitle">{{ 'SKILLS.SUBTITLE' | translate }}</span>
+        <h2 class="section-title">{{ 'SKILLS.TITLE' | translate }}</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card" *ngFor="let category of skillCategories" appTilt>
+                <div class="skill-header">
+                    <div class="icon">{{ category.icon }}</div>
+                    <h3>{{ category.title | translate }}</h3>
+                </div>
+                <ul class="skill-list">
+                    <li *ngFor="let skill of category.skills">
+                        <span class="skill-bullet">▹</span> {{ skill }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+<section id="experience" class="experience-section" appScrollReveal>
+    <div class="container">
+        <span class="section-subtitle">{{ 'EXPERIENCE.SUBTITLE' | translate }}</span>
+        <h2 class="section-title">{{ 'EXPERIENCE.TITLE' | translate }}</h2>
+
+        <div class="timeline">
+            <div class="timeline-item" *ngFor="let exp of experiences">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content" appTilt>
+                    <span class="period">{{ exp.period | translate }}</span>
+                    <h3>{{ exp.role | translate }} <span class="company">&#64; {{ exp.company | translate }}</span></h3>
+                    <p>{{ exp.description | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
