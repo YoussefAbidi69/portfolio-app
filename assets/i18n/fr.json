@@ -1,0 +1,94 @@
+{
+    "HERO": {
+        "GREETING": "Salut, je suis",
+        "ROLE": "Ingénieur Cloud & DevOps",
+        "DESCRIPTION": "Je conçois des infrastructures cloud résilientes et des pipelines d'automatisation performants. Expert en Kubernetes, Terraform et AWS.",
+        "CTA_HIRE": "Me recruter",
+        "CTA_CV": "Télécharger CV",
+        "STATS": {
+            "TECHNOS": "Technos",
+            "PROJECTS": "Projets",
+            "CERTS": "Certifs"
+        }
+    },
+    "HEADER": {
+        "NAV": {
+            "HOME": "Accueil",
+            "SKILLS": "Compétences",
+            "EXPERIENCE": "Parcours",
+            "CERTIFICATIONS": "Certifications",
+            "PROJECTS": "Projets",
+            "CONTACT": "Contact"
+        }
+    },
+    "SKILLS": {
+        "SUBTITLE": "Mon Expertise",
+        "TITLE": "Compétences Techniques",
+        "S0": "IaC & Automation",
+        "S1": "OS & Scripting"
+    },
+    "EXPERIENCE": {
+        "SUBTITLE": "Mon Parcours",
+        "TITLE": "Expérience Professionnelle",
+        "LIST": [
+            {
+                "ROLE": "Stagiaire en Développement Web",
+                "COMPANY": "ASE (Autonomous Systems Engineering)",
+                "PERIOD": "Août - Septembre 2025",
+                "DESC": "Développement d’une application web autonome de gestion des visiteurs externes : intégration de lecteurs code-barres et RFID, traçabilité numérique, reporting PDF/CSV, et dashboard d’administration. Technos : Angular, Spring Boot, MySQL, Git."
+            }
+        ]
+    },
+    "CERTIFICATIONS": {
+        "SUBTITLE": "Diplômes & Certifs",
+        "TITLE": "Certifications",
+        "LIST": [
+            {
+                "NAME": "AWS Certified Cloud Practitioner",
+                "ISSUER": "Amazon Web Services",
+                "DATE": "2023"
+            },
+            {
+                "NAME": "Microsoft Certified: Azure Fundamentals",
+                "ISSUER": "Microsoft",
+                "DATE": "2023"
+            },
+            {
+                "NAME": "HashiCorp Certified: Terraform Associate",
+                "ISSUER": "HashiCorp",
+                "DATE": "2024"
+            }
+        ]
+    },
+    "PROJECTS": {
+        "SUBTITLE": "Portfolio",
+        "TITLE": "Mes Projets Récents",
+        "CTA_CODE": "Voir sur GitHub",
+        "CTA_DEMO": "Démo Live",
+        "LIST": [
+            {
+                "TITLE": "Application Web & Desktop E-sport",
+                "DESC": "Développement d’une application web et desktop pour la gestion complète d’un service d’E-sport."
+            },
+            {
+                "TITLE": "Application Qt Desktop en C++",
+                "DESC": "Réalisation d'une application Qt dédiée à la gestion des usines grâce à une maquette interactive."
+            },
+            {
+                "TITLE": "Application Web",
+                "DESC": "Développement d'une application web assurant la gestion."
+            }
+        ]
+    },
+    "CONTACT": {
+        "SUBTITLE": "Contact",
+        "TITLE": "Travaillons Ensemble",
+        "TEXT": "Je suis actuellement à la recherche d'un stage de fin d'études en Cloud Computing / DevOps. Si mon profil vous intéresse, n'hésitez pas à me contacter !",
+        "CTA_EMAIL": "Me Contacter par Email",
+        "CTA_LINKEDIN": "LinkedIn",
+        "CTA_GITHUB": "GitHub"
+    },
+    "FOOTER": {
+        "TEXT": "© 2026 Portfolio Étudiant Cloud. Construit avec Angular."
+    }
+}
