@@ -29,6 +29,11 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
+              },
+              {
+                "glob": "CNAME",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
