@@ -20,12 +20,12 @@ export class PortfolioService {
         {
             title: 'DevOps & Containers',
             icon: '🚢',
-            skills: ['Docker', 'Kubernetes', 'CI/CD (GitLab, Jenkins)', 'ArgoCD']
+            skills: ['Docker', 'Kubernetes']
         },
         {
             title: 'SKILLS.S0',
             icon: '⚙️',
-            skills: ['Terraform', 'Ansible', 'CloudFormation', 'Bicep']
+            skills: ['Terraform', 'Ansible']
         },
 
         {
