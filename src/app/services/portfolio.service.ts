@@ -66,6 +66,7 @@ export class PortfolioService {
     ];
 
     private certifications = [
+        /*
         {
             name: 'CERTIFICATIONS.LIST.0.NAME',
             issuer: 'CERTIFICATIONS.LIST.0.ISSUER',
@@ -83,7 +84,7 @@ export class PortfolioService {
             issuer: 'CERTIFICATIONS.LIST.2.ISSUER',
             date: 'CERTIFICATIONS.LIST.2.DATE',
             icon: 'terraform-icon'
-        }
+        }*/
     ];
 
     // --- GETTERS ---
