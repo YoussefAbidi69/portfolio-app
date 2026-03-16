@@ -16,12 +16,12 @@ export class PortfolioService {
             icon: '☁️',
             skills: ['AWS (EC2, S3, RDS)', 'Microsoft Azure', 'Google Cloud Platform']
         },
-        
+        */
         {
             title: 'DevOps & Containers',
             icon: '🚢',
             skills: ['Docker', 'Kubernetes', 'CI/CD (GitLab, Jenkins)', 'ArgoCD']
-        },*/
+        },
         {
             title: 'SKILLS.S0',
             icon: '⚙️',
