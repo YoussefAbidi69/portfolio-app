@@ -1,19 +1,29 @@
-<section id="skills" class="skills-section" appScrollReveal>
+<section id="stack" class="skills" appScrollReveal>
     <div class="container">
-        <span class="section-subtitle">{{ 'SKILLS.SUBTITLE' | translate }}</span>
-        <h2 class="section-title">{{ 'SKILLS.TITLE' | translate }}</h2>
+        <app-section-heading
+            [num]="'SKILLS.NUM' | translate"
+            [title]="'SKILLS.TITLE' | translate"
+            [meta]="(meta$ | async) || ''">
+        </app-section-heading>
 
-        <div class="skills-grid">
-            <div class="skill-card" *ngFor="let category of skillCategories" appTilt>
-                <div class="skill-header">
-                    <div class="icon">{{ category.icon }}</div>
-                    <h3>{{ category.title | translate }}</h3>
+        <div class="grid" *ngIf="skills$ | async as categories">
+            <div class="cat-card" *ngFor="let c of categories" [attr.data-accent]="c.accent">
+                <div class="accent-bar"></div>
+                <div class="cat-head">
+                    <div class="cat-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path [attr.d]="iconPaths[c.icon] || iconPaths['code']"/>
+                        </svg>
+                    </div>
+                    <h3 class="cat-title">{{ c.title | translate }}</h3>
                 </div>
-                <ul class="skill-list">
-                    <li *ngFor="let skill of category.skills">
-                        <span class="skill-bullet">▹</span> {{ skill }}
-                    </li>
-                </ul>
+                <div class="badges">
+                    <app-tech-badge
+                        *ngFor="let s of c.skills"
+                        [name]="s.name"
+                        [color]="s.color">
+                    </app-tech-badge>
+                </div>
             </div>
         </div>
     </div>

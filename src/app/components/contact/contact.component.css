@@ -1,21 +1,75 @@
-.contact-section {
-    text-align: center;
-    /* background-color removed */
+.contact {
+    padding-bottom: 60px;
 }
 
-.contact-container {
-    max-width: 800px;
+.contact-wrap {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    background: var(--bg-glass);
+    backdrop-filter: blur(14px);
+    border: 0.5px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-wrap::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(ellipse at center, var(--accent-primary-soft) 0%, transparent 60%);
+    pointer-events: none;
+    opacity: 0.6;
 }
 
 .contact-text {
-    font-size: 1.25rem;
-    color: var(--text-light);
-    margin-bottom: 3rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
 }
 
 .contact-actions {
+    position: relative;
     display: flex;
+    gap: 10px;
     justify-content: center;
-    gap: 1.5rem;
     flex-wrap: wrap;
+    margin-bottom: 1.75rem;
+}
+
+.email-line {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding-top: 1.5rem;
+    border-top: 0.5px dashed var(--border-subtle);
+    width: 100%;
+    justify-content: center;
+}
+
+.email-line .prompt { color: var(--status-success); }
+.email-line .cmd-text { color: var(--accent-secondary); }
+.email-line .email {
+    color: var(--accent-primary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.2s;
+}
+.email-line .email:hover {
+    text-decoration-color: var(--accent-primary);
+}
+
+@media (max-width: 520px) {
+    .contact-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }

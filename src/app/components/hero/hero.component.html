@@ -1,63 +1,76 @@
 <section id="home" class="hero" appScrollReveal>
-    <div class="container hero-container">
-        <div class="hero-text-side">
-            <span class="hero-role-tag">{{ 'HERO.ROLE' | translate }}</span>
+    <div class="container hero-grid" *ngIf="profile$ | async as profile">
+
+        <div class="hero-text">
+            <div class="availability" *ngIf="profile.available">
+                <span class="pulse">
+                    <span class="pulse-ring"></span>
+                    <span class="pulse-dot"></span>
+                </span>
+                <span>{{ 'HERO.BADGE' | translate }}</span>
+            </div>
+
+            <div class="cmd">{{ 'HERO.CMD' | translate }}</div>
+
             <h1 class="hero-title">
-                {{ displayHalo }} <br>
-                <span class="name-highlight">{{ displayName }}</span><span class="cursor"
-                    [class.typing]="isTyping">|</span>
+                {{ 'HERO.TITLE_LINE1' | translate }}<br>
+                <span class="gradient-text italic">{{ 'HERO.TITLE_LINE2' | translate }}</span><span class="cursor-blink">_</span>
             </h1>
 
-            <p class="hero-description">
-                {{ 'HERO.DESCRIPTION' | translate }}
-            </p>
+            <p class="hero-desc">{{ 'HERO.DESCRIPTION' | translate }}</p>
 
-            <div class="hero-cta-group">
-                <a href="#contact" class="btn btn-primary">{{ 'HERO.CTA_HIRE' | translate }}</a>
-                
-                <a href="assets/cv_AbidiYoussef.pdf" download class="btn btn-outline" style="margin-right: 1.5rem;">{{
-                    'HERO.CTA_CV' | translate }}</a>
-
-                <div class="social-links">
-                    <a href="https://github.com/YoussefAbidi69" target="_blank" class="social-icon">GH</a>
-                    <a href="https://www.linkedin.com/in/youssef-abidi-/" target="_blank" class="social-icon">LI</a>
-                </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    {{ 'HERO.CTA_HIRE' | translate }}
+                    <span class="arrow">→</span>
+                </a>
+                <a [href]="profile.cvUrl" download class="btn btn-outline">
+                    <span class="arrow" style="color: var(--accent-primary);">↓</span>
+                    {{ 'HERO.CTA_CV' | translate }}
+                </a>
             </div>
 
-            <div class="hero-stats-row">
-                <div class="stat-unit">
-                    <span class="stat-num">{{ technosCount }}+</span>
-                    <span class="stat-desc">{{ 'HERO.STATS.TECHNOS' | translate }}</span>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num gradient-text" [appCountUp]="(techCount$ | async) || 0" suffix="+">00+</div>
+                    <div class="stat-label">{{ 'HERO.STATS.TECHNOS' | translate }}</div>
                 </div>
-                <div class="stat-unit">
-                    <span class="stat-num">{{ projectsCount }}+</span>
-                    <span class="stat-desc">{{ 'HERO.STATS.PROJECTS' | translate }}</span>
+                <div class="stat-sep"></div>
+                <div class="stat">
+                    <div class="stat-num gradient-text" [appCountUp]="(projectsCount$ | async) || 0" suffix="+">00+</div>
+                    <div class="stat-label">{{ 'HERO.STATS.PROJECTS' | translate }}</div>
                 </div>
-
-                <div class="stat-unit">
-                    <span class="stat-num">{{ certificationsCount }}+</span>
-                    <span class="stat-desc">{{ 'HERO.STATS.CERTS' | translate }}</span>
+                <div class="stat-sep"></div>
+                <div class="stat">
+                    <div class="stat-num gradient-text" [appCountUp]="(certificationsCount$ | async) || 0" suffix="+">00+</div>
+                    <div class="stat-label">{{ 'HERO.STATS.CERTS' | translate }}</div>
                 </div>
             </div>
         </div>
 
-        <div class="hero-image-side">
-            <div class="dashed-circle-wrapper">
-                <!-- The rotating dashed border -->
-                <svg class="dashed-circle-svg" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="48" stroke="var(--primary-color)" stroke-width="0.5" fill="none"
-                        stroke-dasharray="4, 8" />
-                </svg>
-
-                <!-- The Image -->
-                <div class="profile-img-container">
-                    <img src="assets/images/p.png" alt="Youssef ABIDI" class="profile-img">
+        <div class="hero-terminal">
+            <div class="term-bar">
+                <div class="dots">
+                    <span class="d red"></span>
+                    <span class="d yellow"></span>
+                    <span class="d green"></span>
                 </div>
-
-                <!-- Decorative accents -->
-                <div class="decoration-point top-right"></div>
-                <div class="decoration-point bottom-left"></div>
+                <div class="term-title">~/youssef — zsh</div>
+                <div style="width:36px"></div>
+            </div>
+            <div class="term-body">
+                <div class="line"><span class="prompt">➜</span> <span class="path">~</span> cat profile.yaml</div>
+                <div class="line"><span class="key">{{ 'HERO.TERMINAL.NAME' | translate }}:</span> <span class="val">{{ profile.name }}</span></div>
+                <div class="line"><span class="key">{{ 'HERO.TERMINAL.ROLE' | translate }}:</span> <span class="val">{{ 'HERO.TERMINAL.ROLE_VALUE' | translate }}</span></div>
+                <div class="line"><span class="key">{{ 'HERO.TERMINAL.FOCUS' | translate }}:</span></div>
+                <div class="line indent">- {{ 'HERO.TERMINAL.FOCUS_1' | translate }}</div>
+                <div class="line indent">- {{ 'HERO.TERMINAL.FOCUS_2' | translate }}</div>
+                <div class="line indent">- {{ 'HERO.TERMINAL.FOCUS_3' | translate }}</div>
+                <div class="line"><span class="key">{{ 'HERO.TERMINAL.LOCATION' | translate }}:</span> <span class="val">{{ profile.location }}</span></div>
+                <div class="line"><span class="key">{{ 'HERO.TERMINAL.AVAILABILITY' | translate }}:</span> <span class="bool">{{ profile.available }}</span></div>
+                <div class="line"><span class="prompt">➜</span> <span class="path">~</span> <span class="caret"></span></div>
             </div>
         </div>
+
     </div>
 </section>

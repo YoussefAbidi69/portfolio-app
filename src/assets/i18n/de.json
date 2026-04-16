@@ -1,94 +1,115 @@
 {
+    "NAV": {
+        "HOME": "Start",
+        "STACK": "Stack",
+        "EXPERIENCE": "Erfahrung",
+        "PROJECTS": "Projekte",
+        "CERTIFICATIONS": "Zertifikate",
+        "CONTACT": "Kontakt"
+    },
     "HERO": {
-        "GREETING": "Hallo, ich bin",
-        "ROLE": "Cloud & DevOps Ingenieur",
-        "DESCRIPTION": "Ich entwerfe widerstandsfähige Cloud-Infrastrukturen und leistungsstarke Automatisierungspipelines. Experte für Kubernetes, Terraform und AWS.",
-        "CTA_HIRE": "Mich einstellen",
-        "CTA_CV": "Lebenslauf herunterladen",
+        "BADGE": "OFFEN FÜR CHANCEN",
+        "CMD": "$ whoami",
+        "TITLE_LINE1": "Youssef Abidi",
+        "TITLE_LINE2": "cloud engineer",
+        "DESCRIPTION": "Ich entwerfe belastbare Cloud-Architekturen und liefere Automatisierung, die Teams Stunden spart. Kubernetes, Terraform, AWS — zunehmend mit KI-gestützten DevOps-Workflows.",
+        "CTA_HIRE": "Sprechen wir",
+        "CTA_CV": "Lebenslauf",
         "STATS": {
-            "TECHNOS": "Technos",
+            "TECHNOS": "Technologien",
             "PROJECTS": "Projekte",
             "CERTS": "Zertifikate"
+        },
+        "TERMINAL": {
+            "NAME": "Name",
+            "ROLE": "Rolle",
+            "ROLE_VALUE": "Cloud & DevOps Engineer",
+            "FOCUS": "Fokus",
+            "FOCUS_1": "cloud_architektur",
+            "FOCUS_2": "infrastructure_as_code",
+            "FOCUS_3": "ki_gestütztes_devops",
+            "LOCATION": "Standort",
+            "AVAILABILITY": "Verfügbar"
         }
     },
-    "HEADER": {
-        "NAV": {
-            "HOME": "Startseite",
-            "SKILLS": "Kompetenzen",
-            "EXPERIENCE": "Erfahrung",
-            "CERTIFICATIONS": "Zertifizierungen",
-            "PROJECTS": "Projekte",
-            "CONTACT": "Kontakt"
-        }
+    "PROFILE": {
+        "ROLE": "Cloud & DevOps Engineer",
+        "TAGLINE": "Belastbare Cloud-Infrastruktur und Automatisierung"
     },
     "SKILLS": {
-        "SUBTITLE": "Meine Expertise",
-        "TITLE": "Technische Fähigkeiten",
-        "S0": "IaC & Automatisierung",
-        "S1": "OS & Scripting"
+        "NUM": "/02",
+        "TITLE": "Tech Stack",
+        "META": "Technologien · Kategorien",
+        "CATEGORIES": {
+            "CLOUD": "Cloud-Plattformen",
+            "IAC": "IaC & Automatisierung",
+            "CONTAINERS": "Container",
+            "CICD": "CI/CD",
+            "MONITORING": "Monitoring",
+            "OS": "OS & Scripting"
+        }
     },
     "EXPERIENCE": {
-        "SUBTITLE": "Mein Werdegang",
-        "TITLE": "Berufserfahrung",
-        "LIST": [
-            {
-                "ROLE": "Praktikant für Webentwicklung",
-                "COMPANY": "ASE (Autonomous Systems Engineering)",
-                "PERIOD": "August - September 2025",
-                "DESC": "Entwicklung einer autonomen Webanwendung für das externe Besuchermanagement: Integration von Barcode- und RFID-Lesern, digitale Rückverfolgbarkeit, PDF/CSV-Reporting und Administrations-Dashboard. Technologien: Angular, Spring Boot, MySQL, Git."
-            }
-        ]
+        "NUM": "/03",
+        "TITLE": "Erfahrung"
     },
-    "CERTIFICATIONS": {
-        "SUBTITLE": "Diplome & Zertifikate",
-        "TITLE": "Zertifizierungen",
-        "LIST": [
-            {
-                "NAME": "AWS Certified Cloud Practitioner",
-                "ISSUER": "Amazon Web Services",
-                "DATE": "2023"
-            },
-            {
-                "NAME": "Microsoft Certified: Azure Fundamentals",
-                "ISSUER": "Microsoft",
-                "DATE": "2023"
-            },
-            {
-                "NAME": "HashiCorp Certified: Terraform Associate",
-                "ISSUER": "HashiCorp",
-                "DATE": "2024"
-            }
-        ]
+    "EXPERIENCES": {
+        "ASE": {
+            "ROLE": "Praktikant Webentwicklung",
+            "COMPANY": "ASE — Autonomous Systems Engineering",
+            "PERIOD": "Aug. — Sept. 2025",
+            "DESC": "Entwicklung einer autonomen Besucherverwaltung mit Barcode- & RFID-Lesern, digitaler Rückverfolgbarkeit, PDF/CSV-Reporting und Admin-Dashboard."
+        }
+    },
+    "PROJECTS_SECTION": {
+        "NUM": "/04",
+        "TITLE": "Ausgewählte Projekte",
+        "FILTER": {
+            "ALL": "alle",
+            "CLOUD": "cloud",
+            "DEVOPS": "devops",
+            "WEB": "web",
+            "AI": "ki",
+            "OTHER": "andere"
+        },
+        "CTA_CODE": "Code",
+        "CTA_DEMO": "Demo",
+        "FEATURED": "HIGHLIGHT",
+        "EMPTY": "Noch keine Projekte in dieser Kategorie."
     },
     "PROJECTS": {
-        "SUBTITLE": "Portfolio",
-        "TITLE": "Aktuelle Projekte",
-        "CTA_CODE": "Auf GitHub ansehen",
-        "CTA_DEMO": "Live-Demo",
-        "LIST": [
-            {
-                "TITLE": "E-Sport Web- & Desktop-Anwendung",
-                "DESC": "Entwicklung einer Web- und Desktop-Anwendung für das vollständige Management eines E-Sport-Dienstes."
-            },
-            {
-                "TITLE": "Qt Desktop-Anwendung in C++",
-                "DESC": "Realisierung einer Qt-Anwendung für das Fabrikmanagement durch ein interaktives Modell."
-            },
-            {
-                "TITLE": "Webanwendung",
-                "DESC": "Entwicklung einer Webanwendung zur Verwaltung."
-            }
-        ]
+        "GAMEMASTER": {
+            "TITLE": "GameMasterFX — E-Sport-Plattform",
+            "DESC": "Web- und Desktop-Anwendung für das Management eines E-Sport-Service: Turniere, Spieler, Statistiken."
+        },
+        "QT": {
+            "TITLE": "Qt Fabrikmanager",
+            "DESC": "Qt-Anwendung für das Fabrikmanagement mit interaktivem Mockup und Arduino-Integration."
+        },
+        "WEBAPP": {
+            "TITLE": "Management-Webanwendung",
+            "DESC": "PHP-Webanwendung für komplettes Business-Service-Management."
+        }
+    },
+    "CERTIFICATIONS_SECTION": {
+        "NUM": "/05",
+        "TITLE": "Zertifikate",
+        "STATUS": {
+            "OBTAINED": "BESTÄTIGT",
+            "IN_PROGRESS": "IN ARBEIT",
+            "PLANNED": "GEPLANT"
+        }
     },
     "CONTACT": {
-        "SUBTITLE": "Kontakt",
-        "TITLE": "Zusammenarbeiten",
-        "TEXT": "Ich suche derzeit ein Abschlusspraktikum im Bereich Cloud Computing / DevOps. Wenn Sie an meinem Profil interessiert sind, kontaktieren Sie mich gerne!",
-        "CTA_EMAIL": "Per E-Mail kontaktieren",
+        "NUM": "/06",
+        "TITLE": "Zusammenarbeit",
+        "TEXT": "Ich suche derzeit ein Abschlusspraktikum in Cloud Computing / DevOps. Bei Interesse freue ich mich über eine Nachricht.",
+        "CTA_EMAIL": "E-Mail",
         "CTA_LINKEDIN": "LinkedIn",
         "CTA_GITHUB": "GitHub"
     },
     "FOOTER": {
-        "TEXT": "© 2026 Cloud Student Portfolio. Erstellt mit Angular."
+        "BUILT_WITH": "Erstellt mit Angular",
+        "COPYRIGHT": "© 2026 Youssef Abidi"
     }
 }

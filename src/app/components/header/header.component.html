@@ -1,29 +1,23 @@
-<header class="header">
+<header class="header" [class.scrolled]="isScrolled()">
     <div class="container header-container">
-        <a href="#" class="logo">Youssef<span>.</span></a>
+        <a href="#home" class="logo" (click)="closeMenu()">
+            <span class="logo-mark">YA</span>
+            <span class="logo-text">youssef<span class="dot">.</span>dev</span>
+        </a>
 
-        <!-- Hamburger Menu Button -->
-        <button class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="hamburger" [class.active]="isMenuOpen()" (click)="toggleMenu()" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
         </button>
 
-        <nav class="nav" [class.active]="isMenuOpen">
+        <nav class="nav" [class.active]="isMenuOpen()">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#home" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAV.HOME' |
-                        translate }}</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAV.SKILLS' |
-                        translate }}</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link" (click)="closeMenu()">{{
-                        'HEADER.NAV.EXPERIENCE' | translate }}</a></li>
-                <li class="nav-item"><a href="#certifications" class="nav-link" (click)="closeMenu()">{{
-                        'HEADER.NAV.CERTIFICATIONS' | translate }}</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAV.PROJECTS'
-                        | translate }}</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link btn" (click)="closeMenu()">{{
-                        'HEADER.NAV.CONTACT' | translate }}</a></li>
-                <li class="nav-item"><app-language-switcher></app-language-switcher></li>
+                <li><a href="#home" class="nav-link" (click)="closeMenu()"><span class="idx">01.</span>{{ 'NAV.HOME' | translate }}</a></li>
+                <li><a href="#stack" class="nav-link" (click)="closeMenu()"><span class="idx">02.</span>{{ 'NAV.STACK' | translate }}</a></li>
+                <li><a href="#experience" class="nav-link" (click)="closeMenu()"><span class="idx">03.</span>{{ 'NAV.EXPERIENCE' | translate }}</a></li>
+                <li><a href="#projects" class="nav-link" (click)="closeMenu()"><span class="idx">04.</span>{{ 'NAV.PROJECTS' | translate }}</a></li>
+                <li><a href="#certifications" class="nav-link" (click)="closeMenu()"><span class="idx">05.</span>{{ 'NAV.CERTIFICATIONS' | translate }}</a></li>
+                <li><a href="#contact" class="nav-link cta" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a></li>
+                <li class="lang-li"><app-language-switcher></app-language-switcher></li>
             </ul>
         </nav>
     </div>

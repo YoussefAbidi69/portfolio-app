@@ -1,0 +1,64 @@
+[
+  {
+    "id": "cloud",
+    "title": "SKILLS.CATEGORIES.CLOUD",
+    "icon": "cloud",
+    "accent": "cyan",
+    "skills": [
+      { "name": "AWS",   "color": "#FF9900", "level": "intermediate" }
+      
+    ]
+  },
+  {
+    "id": "iac",
+    "title": "SKILLS.CATEGORIES.IAC",
+    "icon": "code",
+    "accent": "violet",
+    "skills": [
+      { "name": "Terraform", "color": "#7B42BC", "level": "intermediate" },
+      { "name": "Ansible",   "color": "#EE2622", "level": "beginner" }
+    ]
+  },
+  {
+    "id": "containers",
+    "title": "SKILLS.CATEGORIES.CONTAINERS",
+    "icon": "container",
+    "accent": "green",
+    "skills": [
+      { "name": "Docker",     "color": "#2496ED", "level": "advanced" },
+      { "name": "Kubernetes", "color": "#326CE5", "level": "intermediate" }
+    ]
+  },
+  {
+    "id": "cicd",
+    "title": "SKILLS.CATEGORIES.CICD",
+    "icon": "pipeline",
+    "accent": "cyan",
+    "skills": [
+      { "name": "GitHub Actions", "color": "#2088FF", "level": "intermediate" },
+      { "name": "Jenkins",        "color": "#D33833", "level": "beginner" },
+      { "name": "GitLab CI",      "color": "#FC6D26", "level": "beginner" }
+    ]
+  },
+  {
+    "id": "monitoring",
+    "title": "SKILLS.CATEGORIES.MONITORING",
+    "icon": "activity",
+    "accent": "amber",
+    "skills": [
+      { "name": "Prometheus", "color": "#E6522C", "level": "beginner" },
+      { "name": "Grafana",    "color": "#F46800", "level": "beginner" }
+    ]
+  },
+  {
+    "id": "os",
+    "title": "SKILLS.CATEGORIES.OS",
+    "icon": "terminal",
+    "accent": "violet",
+    "skills": [
+      { "name": "Linux",  "color": "#FCC624", "level": "advanced" },
+      { "name": "Bash",   "color": "#4EAA25", "level": "intermediate" },
+      { "name": "Python", "color": "#3776AB", "level": "intermediate" }
+    ]
+  }
+]

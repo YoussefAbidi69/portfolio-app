@@ -1,121 +1,49 @@
-import { Injectable } from '@angular/core';
+// src/app/services/portfolio.service.ts
+// Loads all portfolio data from /assets/data/*.json.
+// Adding/editing a project, certification or experience means editing ONE json file.
 
-@Injectable({
-    providedIn: 'root'
-})
+import { Injectable, inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, shareReplay, map } from 'rxjs';
+import {
+    Profile,
+    SkillCategory,
+    Experience,
+    Project,
+    Certification
+} from '../models/portfolio.models';
+
+@Injectable({ providedIn: 'root' })
 export class PortfolioService {
+    private http = inject(HttpClient);
+    private base = 'assets/data';
 
-    constructor() { }
+    // Cached observables (shareReplay avoids repeated HTTP requests).
+    readonly profile$: Observable<Profile> =
+        this.http.get<Profile>(`${this.base}/profile.json`).pipe(shareReplay(1));
 
-    // --- DATA ---
+    readonly skills$: Observable<SkillCategory[]> =
+        this.http.get<SkillCategory[]>(`${this.base}/skills.json`).pipe(shareReplay(1));
 
-    private skillCategories = [
-        /*
-        {
-            title: 'Cloud Platforms',
-            icon: '☁️',
-            skills: ['AWS (EC2, S3, RDS)', 'Microsoft Azure', 'Google Cloud Platform']
-        },
-        */
-        {
-            title: 'DevOps & Containers',
-            icon: '🚢',
-            skills: ['Docker', 'Kubernetes']
-        },
-        {
-            title: 'SKILLS.S0',
-            icon: '⚙️',
-            skills: ['Terraform', 'Ansible']
-        },
+    readonly experiences$: Observable<Experience[]> =
+        this.http.get<Experience[]>(`${this.base}/experiences.json`).pipe(shareReplay(1));
 
-        {
-            title: 'SKILLS.S1', // Key
-            icon: '🐧',
-            skills: ['Linux Administration', 'Bash Scripting', 'Python', 'Networking']
-        }
-    ];
+    readonly projects$: Observable<Project[]> =
+        this.http.get<Project[]>(`${this.base}/projects.json`).pipe(shareReplay(1));
 
-    private projects = [
-        {
-            title: 'PROJECTS.LIST.0.TITLE',
-            description: 'PROJECTS.LIST.0.DESC',
-            tags: ['HTML', 'CSS', 'JavaScript', 'Git', 'Symfony 6', 'JavaFx'],
-            link: 'https://github.com/YoussefAbidi69/GameMasterFX'
-        },
-        {
-            title: 'PROJECTS.LIST.1.TITLE',
-            description: 'PROJECTS.LIST.1.DESC',
-            tags: ['C++', 'Qt', 'Git', 'Arduino'],
-            link: 'https://github.com/YoussefAbidi69/Integraation_QT'
-        },
-        {
-            title: 'PROJECTS.LIST.2.TITLE',
-            description: 'PROJECTS.LIST.2.DESC',
-            tags: ['HTML', 'CSS', 'JavaScript', 'Git', 'PHP'],
-            link: '#'
-        }
-    ];
+    readonly certifications$: Observable<Certification[]> =
+        this.http.get<Certification[]>(`${this.base}/certifications.json`).pipe(shareReplay(1));
 
-    private experiences = [
-        {
-            role: 'EXPERIENCE.LIST.0.ROLE',
-            company: 'EXPERIENCE.LIST.0.COMPANY',
-            period: 'EXPERIENCE.LIST.0.PERIOD',
-            description: 'EXPERIENCE.LIST.0.DESC'
-        }
-    ];
+    // Computed stats for the hero section.
+    readonly techCount$: Observable<number> = this.skills$.pipe(
+        map(cats => cats.reduce((acc, c) => acc + c.skills.length, 0))
+    );
 
-    private certifications = [
-        /*
-        {
-            name: 'CERTIFICATIONS.LIST.0.NAME',
-            issuer: 'CERTIFICATIONS.LIST.0.ISSUER',
-            date: 'CERTIFICATIONS.LIST.0.DATE',
-            icon: 'aws-icon'
-        },
-        {
-            name: 'CERTIFICATIONS.LIST.1.NAME',
-            issuer: 'CERTIFICATIONS.LIST.1.ISSUER',
-            date: 'CERTIFICATIONS.LIST.1.DATE',
-            icon: 'azure-icon'
-        },
-        {
-            name: 'CERTIFICATIONS.LIST.2.NAME',
-            issuer: 'CERTIFICATIONS.LIST.2.ISSUER',
-            date: 'CERTIFICATIONS.LIST.2.DATE',
-            icon: 'terraform-icon'
-        }*/
-    ];
+    readonly projectsCount$: Observable<number> = this.projects$.pipe(
+        map(list => list.length)
+    );
 
-    // --- GETTERS ---
-
-    getSkills() {
-        return this.skillCategories;
-    }
-
-    getProjects() {
-        return this.projects;
-    }
-
-    getExperiences() {
-        return this.experiences;
-    }
-
-    getCertifications() {
-        return this.certifications;
-    }
-
-    // --- COMPUTED STATS ---
-
-    getSkillsCount(): number {
-        return this.skillCategories.reduce((acc, category) => acc + category.skills.length, 0);
-    }
-
-    getProjectsCount(): number {
-        return this.projects.length + this.experiences.length;
-    }
-
-    getCertificationsCount(): number {
-        return this.certifications.length;
-    }
+    readonly certificationsCount$: Observable<number> = this.certifications$.pipe(
+        map(list => list.filter(c => c.status === 'obtained' || c.status === 'in_progress').length)
+    );
 }

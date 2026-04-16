@@ -1,24 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { PortfolioService } from '../../services/portfolio.service';
-
-import { TiltDirective } from '../../directives/tilt.directive';
-import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
+// src/app/components/certifications/certifications.component.ts
+import { Component, inject } from '@angular/core';
+import { CommonModule, AsyncPipe } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { PortfolioService } from '../../services/portfolio.service';
+import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
+import { SectionHeadingComponent } from '../section-heading/section-heading.component';
 
 @Component({
-  selector: 'app-certifications',
-  standalone: true,
-  imports: [CommonModule, TiltDirective, ScrollRevealDirective, TranslateModule],
-  templateUrl: './certifications.component.html',
-  styleUrl: './certifications.component.css'
+    selector: 'app-certifications',
+    standalone: true,
+    imports: [CommonModule, AsyncPipe, TranslateModule, ScrollRevealDirective, SectionHeadingComponent],
+    templateUrl: './certifications.component.html',
+    styleUrl: './certifications.component.css'
 })
-export class CertificationsComponent implements OnInit {
-  certifications: any[] = [];
+export class CertificationsComponent {
+    private portfolio = inject(PortfolioService);
+    certifications$ = this.portfolio.certifications$;
 
-  constructor(private portfolioService: PortfolioService) { }
-
-  ngOnInit() {
-    this.certifications = this.portfolioService.getCertifications();
-  }
+    statusKey(status: string): string {
+        return 'CERTIFICATIONS_SECTION.STATUS.' + status.toUpperCase();
+    }
 }

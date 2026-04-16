@@ -1,17 +1,39 @@
-<section id="certifications" class="certifications-section" appScrollReveal>
+<section id="certifications" class="certs" appScrollReveal>
     <div class="container">
-        <span class="section-subtitle">{{ 'CERTIFICATIONS.SUBTITLE' | translate }}</span>
-        <h2 class="section-title">{{ 'CERTIFICATIONS.TITLE' | translate }}</h2>
+        <app-section-heading
+            [num]="'CERTIFICATIONS_SECTION.NUM' | translate"
+            [title]="'CERTIFICATIONS_SECTION.TITLE' | translate">
+        </app-section-heading>
 
-        <div class="certs-grid">
-            <div class="cert-card" *ngFor="let cert of certifications" appTilt>
-                <div class="cert-icon">🏆</div>
-                <div class="cert-details">
-                    <h3>{{ cert.name | translate }}</h3>
-                    <p class="issuer">{{ cert.issuer | translate }}</p>
-                    <span class="date">{{ cert.date | translate }}</span>
+        <div class="grid" *ngIf="certifications$ | async as certs">
+            <a
+                *ngFor="let c of certs"
+                [href]="c.verifyUrl || null"
+                [target]="c.verifyUrl ? '_blank' : null"
+                class="cert-card"
+                [class.verifiable]="!!c.verifyUrl"
+                [class.pending]="c.status !== 'obtained'">
+
+                <div class="badge-icon"
+                     [style.--brand]="c.issuerColor || 'var(--accent-primary)'">
+                    {{ c.shortCode || '?' }}
                 </div>
-            </div>
+
+                <div class="cert-body">
+                    <div class="cert-name">{{ c.name }}</div>
+                    <div class="cert-meta">{{ c.issuer }} · {{ c.date }}</div>
+
+                    <span class="status" [attr.data-status]="c.status">
+                        <span class="dot"></span>
+                        {{ statusKey(c.status) | translate }}
+                    </span>
+                </div>
+
+                <svg *ngIf="c.verifyUrl" class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+            </a>
         </div>
     </div>
 </section>

@@ -1,29 +1,34 @@
-import { Directive, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+// src/app/directives/scroll-reveal.directive.ts
+import { Directive, ElementRef, OnInit, OnDestroy, inject } from '@angular/core';
 
 @Directive({
     selector: '[appScrollReveal]',
     standalone: true
 })
-export class ScrollRevealDirective implements AfterViewInit {
+export class ScrollRevealDirective implements OnInit, OnDestroy {
+    private el = inject(ElementRef<HTMLElement>);
+    private observer?: IntersectionObserver;
 
-    constructor(private el: ElementRef, private renderer: Renderer2) { }
+    ngOnInit(): void {
+        const node = this.el.nativeElement;
+        node.classList.add('reveal');
 
-    ngAfterViewInit() {
-        // Add the initial reveal class
-        this.renderer.addClass(this.el.nativeElement, 'reveal');
+        this.observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        this.observer?.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+        );
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    this.renderer.addClass(this.el.nativeElement, 'active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
+        this.observer.observe(node);
+    }
 
-        observer.observe(this.el.nativeElement);
+    ngOnDestroy(): void {
+        this.observer?.disconnect();
     }
 }

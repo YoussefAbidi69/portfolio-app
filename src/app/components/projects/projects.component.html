@@ -1,22 +1,65 @@
-<section id="projects" class="projects-section" appScrollReveal>
+<section id="projects" class="projects" appScrollReveal>
     <div class="container">
-        <span class="section-subtitle">{{ 'PROJECTS.SUBTITLE' | translate }}</span>
-        <h2 class="section-title">{{ 'PROJECTS.TITLE' | translate }}</h2>
+        <div class="proj-head">
+            <app-section-heading
+                [num]="'PROJECTS_SECTION.NUM' | translate"
+                [title]="'PROJECTS_SECTION.TITLE' | translate">
+            </app-section-heading>
 
-        <div class="projects-grid">
-            <div class="project-card" *ngFor="let project of projects" appTilt>
-                <div class="project-content">
-                    <h3>{{ project.title | translate }}</h3>
-                    <p>{{ project.description | translate }}</p>
-                    <div class="tags">
-                        <span class="tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+            <div class="filters">
+                <button
+                    *ngFor="let f of filters"
+                    class="filter"
+                    [class.active]="active() === f.key"
+                    (click)="setFilter(f.key)">
+                    {{ f.i18n | translate }}
+                </button>
+            </div>
+        </div>
+
+        <div class="grid">
+            <article
+                *ngFor="let p of visible(); trackBy: trackId"
+                class="proj-card"
+                appTilt>
+                <div class="cover" [attr.data-cat]="p.category">
+                    <div class="cover-glow"></div>
+                    <div class="cover-path">{{ p.category }}/{{ p.id }}</div>
+                    <span *ngIf="p.featured" class="featured-pill">
+                        {{ 'PROJECTS_SECTION.FEATURED' | translate }}
+                    </span>
+                </div>
+
+                <div class="body">
+                    <div class="body-head">
+                        <h3 class="proj-title">{{ p.title | translate }}</h3>
+                        <div class="links">
+                            <a *ngIf="p.links.github" [href]="p.links.github" target="_blank" [attr.aria-label]="'GitHub'">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                            <a *ngIf="p.links.demo" [href]="p.links.demo" target="_blank" [attr.aria-label]="'Demo'">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="proj-desc">{{ p.description | translate }}</p>
+
+                    <div class="stack">
+                        <app-tech-badge *ngFor="let t of p.stack" [name]="t"></app-tech-badge>
                     </div>
                 </div>
-                <div class="project-actions">
-                    <a [href]="project.link" target="_blank" class="btn btn-outline small">{{ 'PROJECTS.CTA_CODE' |
-                        translate }}</a>
-                </div>
-            </div>
+            </article>
+
+            <p *ngIf="visible().length === 0" class="empty">
+                {{ 'PROJECTS_SECTION.EMPTY' | translate }}
+            </p>
         </div>
     </div>
 </section>
