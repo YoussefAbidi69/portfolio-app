@@ -1,0 +1,32 @@
+[
+  {
+    "id": "aws-cp",
+    "name": "AWS Certified Cloud Practitioner",
+    "issuer": "Amazon Web Services",
+    "date": "2024-09",
+    "status": "in_progress",
+    "shortCode": "AWS",
+    "issuerColor": "#FF9900",
+    "verifyUrl": ""
+  },
+  {
+    "id": "az-900",
+    "name": "Azure Fundamentals (AZ-900)",
+    "issuer": "Microsoft",
+    "date": "2025-02",
+    "status": "planned",
+    "shortCode": "AZ",
+    "issuerColor": "#0078D4",
+    "verifyUrl": ""
+  },
+  {
+    "id": "tf-associate",
+    "name": "Terraform Associate",
+    "issuer": "HashiCorp",
+    "date": "2025-06",
+    "status": "planned",
+    "shortCode": "TF",
+    "issuerColor": "#7B42BC",
+    "verifyUrl": ""
+  }
+]

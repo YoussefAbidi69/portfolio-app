@@ -1,0 +1,36 @@
+[
+  {
+    "id": "gamemasterfx",
+    "title": "PROJECTS.GAMEMASTER.TITLE",
+    "description": "PROJECTS.GAMEMASTER.DESC",
+    "category": "web",
+    "stack": ["Symfony 6", "JavaFX", "MySQL", "JavaScript"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/GameMasterFX"
+    },
+    "featured": true,
+    "date": "2024-05"
+  },
+  {
+    "id": "qt-factory",
+    "title": "PROJECTS.QT.TITLE",
+    "description": "PROJECTS.QT.DESC",
+    "category": "other",
+    "stack": ["C++", "Qt", "Arduino"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/Integraation_QT"
+    },
+    "featured": false,
+    "date": "2023-11"
+  },
+  {
+    "id": "webapp",
+    "title": "PROJECTS.WEBAPP.TITLE",
+    "description": "PROJECTS.WEBAPP.DESC",
+    "category": "web",
+    "stack": ["PHP", "HTML", "CSS", "JavaScript"],
+    "links": {},
+    "featured": false,
+    "date": "2023-06"
+  }
+]

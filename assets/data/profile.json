@@ -1,0 +1,13 @@
+{
+  "name": "Youssef Abidi",
+  "role": "PROFILE.ROLE",
+  "tagline": "PROFILE.TAGLINE",
+  "location": "Tunis, TN",
+  "email": "youssef.abidi@example.com",
+  "available": true,
+  "social": {
+    "github": "https://github.com/YoussefAbidi69",
+    "linkedin": "https://www.linkedin.com/in/youssef-abidi-/"
+  },
+  "cvUrl": "assets/cv_AbidiYoussef.pdf"
+}
