@@ -1,0 +1,125 @@
+{
+    "NAV": {
+        "HOME": "Accueil",
+        "STACK": "Stack",
+        "EXPERIENCE": "Parcours",
+        "PROJECTS": "Projets",
+        "CERTIFICATIONS": "Certifications",
+        "CONTACT": "Contact"
+    },
+    "HERO": {
+        "BADGE": "OUVERT AUX OPPORTUNITÉS",
+        "CMD": "$ whoami",
+        "TITLE_LINE1": "Youssef Abidi",
+        "TITLE_LINE2": "cloud engineer",
+        "DESCRIPTION": "Je conçois des infrastructures cloud résilientes et j'automatise les pipelines qui font gagner des heures aux équipes. Kubernetes, Ansible, OpenStack — avec un intérêt grandissant pour le DevOps piloté par l'IA.",
+        "CTA_HIRE": "Discutons",
+        "CTA_CV": "Télécharger CV",
+        "STATS": {
+            "TECHNOS": "Technologies",
+            "PROJECTS": "Projets",
+            "CERTS": "Certifications"
+        },
+        "TERMINAL": {
+            "NAME": "nom",
+            "ROLE": "rôle",
+            "ROLE_VALUE": "Ingénieur Cloud & DevOps",
+            "FOCUS": "focus",
+            "FOCUS_1": "architecture_cloud",
+            "FOCUS_2": "infrastructure_as_code",
+            "FOCUS_3": "devops_ia",
+            "LOCATION": "localisation",
+            "AVAILABILITY": "disponible"
+        }
+    },
+    "PROFILE": {
+        "ROLE": "Ingénieur Cloud & DevOps",
+        "TAGLINE": "Infrastructures cloud résilientes et automatisation"
+    },
+    "SKILLS": {
+        "NUM": "/02",
+        "TITLE": "Stack technique",
+        "META": "technologies · catégories",
+        "CATEGORIES": {
+            "CLOUD": "Cloud platforms",
+            "IAC": "IaC & automation",
+            "CONTAINERS": "Conteneurs",
+            "BACKEND": "Backend",
+            "FRONTEND": "Frontend",
+            "CICD": "CI/CD",
+            "MONITORING": "Monitoring",
+            "OS": "OS & scripting"
+        }
+    },
+    "EXPERIENCE": {
+        "NUM": "/03",
+        "TITLE": "Expérience"
+    },
+    "EXPERIENCES": {
+        "ASE": {
+            "ROLE": "Stagiaire en développement web",
+            "COMPANY": "ASE — Autonomous Systems Engineering",
+            "PERIOD": "Août — Sept. 2025",
+            "DESC": "Développement d'une application web autonome de gestion des visiteurs externes : intégration de lecteurs code-barres et RFID, traçabilité numérique, reporting PDF/CSV et dashboard d'administration."
+        }
+    },
+    "PROJECTS_SECTION": {
+        "NUM": "/04",
+        "TITLE": "Projets sélectionnés",
+        "FILTER": {
+            "ALL": "tous",
+            "CLOUD": "cloud",
+            "DEVOPS": "devops",
+            "WEB": "web",
+            "AI": "ia",
+            "OTHER": "autre"
+        },
+        "CTA_CODE": "Code",
+        "CTA_DEMO": "Démo",
+        "FEATURED": "PHARE",
+        "EMPTY": "Aucun projet dans cette catégorie."
+    },
+    "PROJECTS": {
+        "PI_CLOUD": {
+            "TITLE": "PI Cloud — Plateforme cloud privée",
+            "DESC": "Déploiement complet d'un cloud privé : IaaS avec OpenStack, automatisation Ansible, orchestration Kubernetes et application full-stack (TrustedWork) avec Spring Boot + Angular et intégration IA."
+        },
+        "ASE_VISITOR": {
+            "TITLE": "Gestion des visiteurs",
+            "DESC": "Application web autonome de gestion des visiteurs : lecteurs code-barres & RFID, traçabilité numérique, reporting PDF/CSV et dashboard d'administration."
+        },
+        "GAMEMASTER": {
+            "TITLE": "GameMasterFX — Plateforme E-sport",
+            "DESC": "Application web et desktop complète pour la gestion d'un service d'E-sport : tournois, joueurs, statistiques."
+        },
+        "QT": {
+            "TITLE": "Gestionnaire d'usine Qt",
+            "DESC": "Application Qt dédiée à la gestion d'usines avec une maquette interactive et intégration Arduino."
+        },
+        "WEBAPP": {
+            "TITLE": "Application web de gestion",
+            "DESC": "Application web PHP assurant la gestion complète d'un service métier."
+        }
+    },
+    "CERTIFICATIONS_SECTION": {
+        "NUM": "/05",
+        "TITLE": "Certifications",
+        "STATUS": {
+            "OBTAINED": "OBTENU",
+            "IN_PROGRESS": "EN COURS",
+            "PLANNED": "PLANIFIÉ"
+        }
+    },
+    "CONTACT": {
+        "NUM": "/06",
+        "TITLE": "Travaillons ensemble",
+        "TEXT": "Je recherche actuellement un stage de fin d'études en Cloud Computing / DevOps. Si mon profil vous intéresse, n'hésitez pas à me contacter.",
+        "CTA_EMAIL": "Email",
+        "CTA_LINKEDIN": "LinkedIn",
+        "CTA_GITHUB": "GitHub"
+    },
+    "FOOTER": {
+        "BUILT_WITH": "Construit avec Angular",
+        "COPYRIGHT": "© 2026 Youssef Abidi"
+    }
+}

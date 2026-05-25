@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ase-2025",
+    "role": "EXPERIENCES.ASE.ROLE",
+    "company": "EXPERIENCES.ASE.COMPANY",
+    "companyUrl": "",
+    "period": "EXPERIENCES.ASE.PERIOD",
+    "description": "EXPERIENCES.ASE.DESC",
+    "stack": ["Angular", "Spring Boot", "MySQL", "Git"],
+        "links": {
+      "github": "https://github.com/YoussefAbidi69/ASE_stage"
+    },
+    "current": false
+  }
+]

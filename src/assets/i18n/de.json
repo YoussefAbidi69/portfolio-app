@@ -1,0 +1,115 @@
+{
+    "NAV": {
+        "HOME": "Start",
+        "STACK": "Stack",
+        "EXPERIENCE": "Erfahrung",
+        "PROJECTS": "Projekte",
+        "CERTIFICATIONS": "Zertifikate",
+        "CONTACT": "Kontakt"
+    },
+    "HERO": {
+        "BADGE": "OFFEN FÜR CHANCEN",
+        "CMD": "$ whoami",
+        "TITLE_LINE1": "Youssef Abidi",
+        "TITLE_LINE2": "cloud engineer",
+        "DESCRIPTION": "Ich entwerfe belastbare Cloud-Architekturen und liefere Automatisierung, die Teams Stunden spart. Kubernetes, Terraform, AWS — zunehmend mit KI-gestützten DevOps-Workflows.",
+        "CTA_HIRE": "Sprechen wir",
+        "CTA_CV": "Lebenslauf",
+        "STATS": {
+            "TECHNOS": "Technologien",
+            "PROJECTS": "Projekte",
+            "CERTS": "Zertifikate"
+        },
+        "TERMINAL": {
+            "NAME": "Name",
+            "ROLE": "Rolle",
+            "ROLE_VALUE": "Cloud & DevOps Engineer",
+            "FOCUS": "Fokus",
+            "FOCUS_1": "cloud_architektur",
+            "FOCUS_2": "infrastructure_as_code",
+            "FOCUS_3": "ki_gestütztes_devops",
+            "LOCATION": "Standort",
+            "AVAILABILITY": "Verfügbar"
+        }
+    },
+    "PROFILE": {
+        "ROLE": "Cloud & DevOps Engineer",
+        "TAGLINE": "Belastbare Cloud-Infrastruktur und Automatisierung"
+    },
+    "SKILLS": {
+        "NUM": "/02",
+        "TITLE": "Tech Stack",
+        "META": "Technologien · Kategorien",
+        "CATEGORIES": {
+            "CLOUD": "Cloud-Plattformen",
+            "IAC": "IaC & Automatisierung",
+            "CONTAINERS": "Container",
+            "CICD": "CI/CD",
+            "MONITORING": "Monitoring",
+            "OS": "OS & Scripting"
+        }
+    },
+    "EXPERIENCE": {
+        "NUM": "/03",
+        "TITLE": "Erfahrung"
+    },
+    "EXPERIENCES": {
+        "ASE": {
+            "ROLE": "Praktikant Webentwicklung",
+            "COMPANY": "ASE — Autonomous Systems Engineering",
+            "PERIOD": "Aug. — Sept. 2025",
+            "DESC": "Entwicklung einer autonomen Besucherverwaltung mit Barcode- & RFID-Lesern, digitaler Rückverfolgbarkeit, PDF/CSV-Reporting und Admin-Dashboard."
+        }
+    },
+    "PROJECTS_SECTION": {
+        "NUM": "/04",
+        "TITLE": "Ausgewählte Projekte",
+        "FILTER": {
+            "ALL": "alle",
+            "CLOUD": "cloud",
+            "DEVOPS": "devops",
+            "WEB": "web",
+            "AI": "ki",
+            "OTHER": "andere"
+        },
+        "CTA_CODE": "Code",
+        "CTA_DEMO": "Demo",
+        "FEATURED": "HIGHLIGHT",
+        "EMPTY": "Noch keine Projekte in dieser Kategorie."
+    },
+    "PROJECTS": {
+        "GAMEMASTER": {
+            "TITLE": "GameMasterFX — E-Sport-Plattform",
+            "DESC": "Web- und Desktop-Anwendung für das Management eines E-Sport-Service: Turniere, Spieler, Statistiken."
+        },
+        "QT": {
+            "TITLE": "Qt Fabrikmanager",
+            "DESC": "Qt-Anwendung für das Fabrikmanagement mit interaktivem Mockup und Arduino-Integration."
+        },
+        "WEBAPP": {
+            "TITLE": "Management-Webanwendung",
+            "DESC": "PHP-Webanwendung für komplettes Business-Service-Management."
+        }
+    },
+    "CERTIFICATIONS_SECTION": {
+        "NUM": "/05",
+        "TITLE": "Zertifikate",
+        "STATUS": {
+            "OBTAINED": "BESTÄTIGT",
+            "IN_PROGRESS": "IN ARBEIT",
+            "PLANNED": "GEPLANT"
+        }
+    },
+    "CONTACT": {
+        "NUM": "/06",
+        "TITLE": "Zusammenarbeit",
+        "TEXT": "Ich suche derzeit ein Abschlusspraktikum in Cloud Computing / DevOps. Bei Interesse freue ich mich über eine Nachricht.",
+        "CTA_EMAIL": "E-Mail",
+        "CTA_LINKEDIN": "LinkedIn",
+        "CTA_GITHUB": "GitHub"
+    },
+    "FOOTER": {
+        "BUILT_WITH": "Erstellt mit Angular",
+        "COPYRIGHT": "© 2026 Youssef Abidi"
+    }
+}

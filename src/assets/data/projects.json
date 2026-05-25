@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pi-cloud",
+    "title": "PROJECTS.PI_CLOUD.TITLE",
+    "description": "PROJECTS.PI_CLOUD.DESC",
+    "category": "cloud",
+    "stack": ["OpenStack", "Kubernetes", "Ansible", "Docker", "Spring Boot", "Angular"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69"
+    },
+    "featured": true,
+    "date": "2026-05"
+  },
+  {
+    "id": "ase-visitor",
+    "title": "PROJECTS.ASE_VISITOR.TITLE",
+    "description": "PROJECTS.ASE_VISITOR.DESC",
+    "category": "web",
+    "stack": ["Angular", "Spring Boot", "MySQL", "Git"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/ASE_stage"
+    },
+    "featured": true,
+    "date": "2025-09"
+  },
+  {
+    "id": "gamemasterfx",
+    "title": "PROJECTS.GAMEMASTER.TITLE",
+    "description": "PROJECTS.GAMEMASTER.DESC",
+    "category": "web",
+    "stack": ["Symfony 6", "JavaFX", "MySQL", "JavaScript"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/GameMasterFX"
+    },
+    "featured": false,
+    "date": "2025-05"
+  },
+  {
+    "id": "qt-factory",
+    "title": "PROJECTS.QT.TITLE",
+    "description": "PROJECTS.QT.DESC",
+    "category": "other",
+    "stack": ["C++", "Qt", "Arduino"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/Integraation_QT"
+    },
+    "featured": false,
+    "date": "2024-05"
+  }
+]

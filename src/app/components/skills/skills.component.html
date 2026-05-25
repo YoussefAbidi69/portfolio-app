@@ -1,0 +1,47 @@
+<section id="stack" class="skills" appScrollReveal>
+    <div class="container">
+        <app-section-heading
+            [num]="'SKILLS.NUM' | translate"
+            [title]="'SKILLS.TITLE' | translate"
+            [meta]="(meta$ | async) || ''">
+        </app-section-heading>
+
+        <div class="skills-grid" *ngIf="skills$ | async as categories">
+            <div class="skill-card" *ngFor="let c of categories" [attr.data-accent]="c.accent">
+                <div class="card-accent-bar"></div>
+
+                <div class="card-head">
+                    <div class="card-icon">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path [attr.d]="iconPaths[c.icon] || iconPaths['code']"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="card-title">{{ c.title | translate }}</h3>
+                        <span class="card-count">{{ c.skills.length }} {{ c.skills.length === 1 ? 'tool' : 'tools' }}</span>
+                    </div>
+                </div>
+
+                <div class="skill-rows">
+                    <div class="skill-row" *ngFor="let s of c.skills">
+                        <span class="skill-dot" [style.background]="s.color"></span>
+                        <span class="skill-name">{{ s.name }}</span>
+                        <div class="skill-level">
+                            <span class="lvl" [class.on]="getLevelNum(s.level) >= 1"></span>
+                            <span class="lvl" [class.on]="getLevelNum(s.level) >= 2"></span>
+                            <span class="lvl" [class.on]="getLevelNum(s.level) >= 3"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <span class="level-legend">
+                        <span class="lvl on"></span> beginner &nbsp;
+                        <span class="lvl on"></span><span class="lvl on"></span> mid &nbsp;
+                        <span class="lvl on"></span><span class="lvl on"></span><span class="lvl on"></span> pro
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

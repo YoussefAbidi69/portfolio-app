@@ -1,0 +1,125 @@
+{
+    "NAV": {
+        "HOME": "Home",
+        "STACK": "Stack",
+        "EXPERIENCE": "Experience",
+        "PROJECTS": "Projects",
+        "CERTIFICATIONS": "Certifications",
+        "CONTACT": "Contact"
+    },
+    "HERO": {
+        "BADGE": "OPEN TO OPPORTUNITIES",
+        "CMD": "$ whoami",
+        "TITLE_LINE1": "Youssef Abidi",
+        "TITLE_LINE2": "cloud engineer",
+        "DESCRIPTION": "I architect resilient cloud systems and ship automation that saves teams hours. Kubernetes, Ansible, OpenStack — increasingly paired with AI-driven DevOps workflows.",
+        "CTA_HIRE": "Let's talk",
+        "CTA_CV": "Download CV",
+        "STATS": {
+            "TECHNOS": "Technologies",
+            "PROJECTS": "Projects",
+            "CERTS": "Certifications"
+        },
+        "TERMINAL": {
+            "NAME": "name",
+            "ROLE": "role",
+            "ROLE_VALUE": "Cloud & DevOps Engineer",
+            "FOCUS": "focus",
+            "FOCUS_1": "cloud_architecture",
+            "FOCUS_2": "infrastructure_as_code",
+            "FOCUS_3": "ai_driven_devops",
+            "LOCATION": "location",
+            "AVAILABILITY": "available"
+        }
+    },
+    "PROFILE": {
+        "ROLE": "Cloud & DevOps Engineer",
+        "TAGLINE": "Resilient cloud infrastructure and automation"
+    },
+    "SKILLS": {
+        "NUM": "/02",
+        "TITLE": "Tech stack",
+        "META": "technologies · categories",
+        "CATEGORIES": {
+            "CLOUD": "Cloud platforms",
+            "IAC": "IaC & automation",
+            "CONTAINERS": "Containers",
+            "BACKEND": "Backend",
+            "FRONTEND": "Frontend",
+            "CICD": "CI/CD",
+            "MONITORING": "Monitoring",
+            "OS": "OS & scripting"
+        }
+    },
+    "EXPERIENCE": {
+        "NUM": "/03",
+        "TITLE": "Experience"
+    },
+    "EXPERIENCES": {
+        "ASE": {
+            "ROLE": "Web development intern",
+            "COMPANY": "ASE — Autonomous Systems Engineering",
+            "PERIOD": "Aug — Sep 2025",
+            "DESC": "Built an autonomous visitor-management platform with barcode & RFID readers, digital traceability, PDF/CSV reporting, and an admin dashboard."
+        }
+    },
+    "PROJECTS_SECTION": {
+        "NUM": "/04",
+        "TITLE": "Selected projects",
+        "FILTER": {
+            "ALL": "all",
+            "CLOUD": "cloud",
+            "DEVOPS": "devops",
+            "WEB": "web",
+            "AI": "ai",
+            "OTHER": "other"
+        },
+        "CTA_CODE": "Code",
+        "CTA_DEMO": "Demo",
+        "FEATURED": "FEATURED",
+        "EMPTY": "No projects in this category yet."
+    },
+    "PROJECTS": {
+        "PI_CLOUD": {
+            "TITLE": "PI Cloud — Private Cloud Platform",
+            "DESC": "End-to-end private cloud deployment: IaaS with OpenStack, Ansible automation, Kubernetes orchestration, and a full-stack app (TrustedWork) with Spring Boot + Angular and AI integration."
+        },
+        "ASE_VISITOR": {
+            "TITLE": "Visitor Management System",
+            "DESC": "Autonomous visitor-management web app with barcode & RFID integration, digital traceability, PDF/CSV reporting, and an admin dashboard."
+        },
+        "GAMEMASTER": {
+            "TITLE": "GameMasterFX — E-sport platform",
+            "DESC": "Full web + desktop application to manage an E-sport service: tournaments, players, stats."
+        },
+        "QT": {
+            "TITLE": "Qt factory manager",
+            "DESC": "Qt application for factory management with an interactive mockup and Arduino integration."
+        },
+        "WEBAPP": {
+            "TITLE": "Management web app",
+            "DESC": "PHP web application handling complete business-service management."
+        }
+    },
+    "CERTIFICATIONS_SECTION": {
+        "NUM": "/05",
+        "TITLE": "Certifications",
+        "STATUS": {
+            "OBTAINED": "VERIFIED",
+            "IN_PROGRESS": "IN PROGRESS",
+            "PLANNED": "PLANNED"
+        }
+    },
+    "CONTACT": {
+        "NUM": "/06",
+        "TITLE": "Let's work together",
+        "TEXT": "I'm currently looking for a final-year internship in Cloud Computing / DevOps. If my profile interests you, feel free to reach out.",
+        "CTA_EMAIL": "Email",
+        "CTA_LINKEDIN": "LinkedIn",
+        "CTA_GITHUB": "GitHub"
+    },
+    "FOOTER": {
+        "BUILT_WITH": "Built with Angular",
+        "COPYRIGHT": "© 2026 Youssef Abidi"
+    }
+}
