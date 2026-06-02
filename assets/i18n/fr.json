@@ -12,7 +12,7 @@
         "CMD": "$ whoami",
         "TITLE_LINE1": "Youssef Abidi",
         "TITLE_LINE2": "cloud engineer",
-        "DESCRIPTION": "Je conçois des infrastructures cloud résilientes et j'automatise les pipelines qui font gagner des heures aux équipes. Kubernetes, Terraform, AWS — avec un intérêt grandissant pour le DevOps piloté par l'IA.",
+        "DESCRIPTION": "Je conçois des infrastructures cloud résilientes et j'automatise les pipelines qui font gagner des heures aux équipes. Kubernetes, Ansible, OpenStack — avec un intérêt grandissant pour le DevOps piloté par l'IA.",
         "CTA_HIRE": "Discutons",
         "CTA_CV": "Télécharger CV",
         "STATS": {
@@ -21,15 +21,15 @@
             "CERTS": "Certifications"
         },
         "TERMINAL": {
-            "NAME": "Nom",
-            "ROLE": "Rôle",
+            "NAME": "nom",
+            "ROLE": "rôle",
             "ROLE_VALUE": "Ingénieur Cloud & DevOps",
-            "FOCUS": "Focus",
+            "FOCUS": "focus",
             "FOCUS_1": "architecture_cloud",
             "FOCUS_2": "infrastructure_as_code",
             "FOCUS_3": "devops_ia",
-            "LOCATION": "Localisation",
-            "AVAILABILITY": "Disponible"
+            "LOCATION": "localisation",
+            "AVAILABILITY": "disponible"
         }
     },
     "PROFILE": {
@@ -41,12 +41,14 @@
         "TITLE": "Stack technique",
         "META": "technologies · catégories",
         "CATEGORIES": {
-            "CLOUD": "Cloud Platforms",
-            "IAC": "IaC & Automation",
+            "CLOUD": "Cloud platforms",
+            "IAC": "IaC & automation",
             "CONTAINERS": "Conteneurs",
+            "BACKEND": "Backend",
+            "FRONTEND": "Frontend",
             "CICD": "CI/CD",
             "MONITORING": "Monitoring",
-            "OS": "OS & Scripting"
+            "OS": "OS & scripting"
         }
     },
     "EXPERIENCE": {
@@ -78,6 +80,14 @@
         "EMPTY": "Aucun projet dans cette catégorie."
     },
     "PROJECTS": {
+        "PI_CLOUD": {
+            "TITLE": "PI Cloud — Plateforme cloud privée",
+            "DESC": "Déploiement complet d'un cloud privé : IaaS avec OpenStack, automatisation Ansible, orchestration Kubernetes et application full-stack (TrustedWork) avec Spring Boot + Angular et intégration IA."
+        },
+        "ASE_VISITOR": {
+            "TITLE": "Gestion des visiteurs",
+            "DESC": "Application web autonome de gestion des visiteurs : lecteurs code-barres & RFID, traçabilité numérique, reporting PDF/CSV et dashboard d'administration."
+        },
         "GAMEMASTER": {
             "TITLE": "GameMasterFX — Plateforme E-sport",
             "DESC": "Application web et desktop complète pour la gestion d'un service d'E-sport : tournois, joueurs, statistiques."

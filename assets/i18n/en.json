@@ -12,7 +12,7 @@
         "CMD": "$ whoami",
         "TITLE_LINE1": "Youssef Abidi",
         "TITLE_LINE2": "cloud engineer",
-        "DESCRIPTION": "I architect resilient cloud systems and ship automation that saves teams hours. Kubernetes, Terraform, AWS — increasingly paired with AI-driven DevOps workflows.",
+        "DESCRIPTION": "I architect resilient cloud systems and ship automation that saves teams hours. Kubernetes, Ansible, OpenStack — increasingly paired with AI-driven DevOps workflows.",
         "CTA_HIRE": "Let's talk",
         "CTA_CV": "Download CV",
         "STATS": {
@@ -21,15 +21,15 @@
             "CERTS": "Certifications"
         },
         "TERMINAL": {
-            "NAME": "Name",
-            "ROLE": "Role",
+            "NAME": "name",
+            "ROLE": "role",
             "ROLE_VALUE": "Cloud & DevOps Engineer",
-            "FOCUS": "Focus",
+            "FOCUS": "focus",
             "FOCUS_1": "cloud_architecture",
             "FOCUS_2": "infrastructure_as_code",
             "FOCUS_3": "ai_driven_devops",
-            "LOCATION": "Location",
-            "AVAILABILITY": "Available"
+            "LOCATION": "location",
+            "AVAILABILITY": "available"
         }
     },
     "PROFILE": {
@@ -44,6 +44,8 @@
             "CLOUD": "Cloud platforms",
             "IAC": "IaC & automation",
             "CONTAINERS": "Containers",
+            "BACKEND": "Backend",
+            "FRONTEND": "Frontend",
             "CICD": "CI/CD",
             "MONITORING": "Monitoring",
             "OS": "OS & scripting"
@@ -78,6 +80,14 @@
         "EMPTY": "No projects in this category yet."
     },
     "PROJECTS": {
+        "PI_CLOUD": {
+            "TITLE": "PI Cloud — Private Cloud Platform",
+            "DESC": "End-to-end private cloud deployment: IaaS with OpenStack, Ansible automation, Kubernetes orchestration, and a full-stack app (TrustedWork) with Spring Boot + Angular and AI integration."
+        },
+        "ASE_VISITOR": {
+            "TITLE": "Visitor Management System",
+            "DESC": "Autonomous visitor-management web app with barcode & RFID integration, digital traceability, PDF/CSV reporting, and an admin dashboard."
+        },
         "GAMEMASTER": {
             "TITLE": "GameMasterFX — E-sport platform",
             "DESC": "Full web + desktop application to manage an E-sport service: tournaments, players, stats."

@@ -5,8 +5,8 @@
     "icon": "cloud",
     "accent": "cyan",
     "skills": [
-      { "name": "AWS",   "color": "#FF9900", "level": "intermediate" }
-      
+      { "name": "OpenStack", "color": "#ED1944", "level": "intermediate" },
+      { "name": "Azure",       "color": "#0078D4", "level": "beginner" }
     ]
   },
   {
@@ -15,8 +15,8 @@
     "icon": "code",
     "accent": "violet",
     "skills": [
-      { "name": "Terraform", "color": "#7B42BC", "level": "intermediate" },
-      { "name": "Ansible",   "color": "#EE2622", "level": "beginner" }
+      { "name": "Ansible",   "color": "#EE2622", "level": "intermediate" },
+      { "name": "Terraform", "color": "#7B42BC", "level": "beginner" }
     ]
   },
   {
@@ -30,35 +30,47 @@
     ]
   },
   {
+    "id": "backend",
+    "title": "SKILLS.CATEGORIES.BACKEND",
+    "icon": "server",
+    "accent": "cyan",
+    "skills": [
+      { "name": "Spring Boot", "color": "#6DB33F", "level": "advanced" },
+      { "name": "Java",        "color": "#F89820", "level": "advanced" },
+      { "name": "Symfony 6",   "color": "#000000", "level": "intermediate" },
+      { "name": "MySQL / JPA", "color": "#4479A1", "level": "intermediate" }
+    ]
+  },
+  {
+    "id": "frontend",
+    "title": "SKILLS.CATEGORIES.FRONTEND",
+    "icon": "monitor",
+    "accent": "violet",
+    "skills": [
+      { "name": "Angular",    "color": "#DD0031", "level": "advanced" },
+      { "name": "TypeScript", "color": "#3178C6", "level": "advanced" },
+      { "name": "JavaFX",     "color": "#5382A1", "level": "intermediate" }
+    ]
+  },
+  {
     "id": "cicd",
     "title": "SKILLS.CATEGORIES.CICD",
     "icon": "pipeline",
     "accent": "cyan",
     "skills": [
-      { "name": "GitHub Actions", "color": "#2088FF", "level": "intermediate" },
-      { "name": "Jenkins",        "color": "#D33833", "level": "beginner" },
-      { "name": "GitLab CI",      "color": "#FC6D26", "level": "beginner" }
-    ]
-  },
-  {
-    "id": "monitoring",
-    "title": "SKILLS.CATEGORIES.MONITORING",
-    "icon": "activity",
-    "accent": "amber",
-    "skills": [
-      { "name": "Prometheus", "color": "#E6522C", "level": "beginner" },
-      { "name": "Grafana",    "color": "#F46800", "level": "beginner" }
+      { "name": "GitHub Actions", "color": "#2088FF", "level": "intermediate" }
     ]
   },
   {
     "id": "os",
     "title": "SKILLS.CATEGORIES.OS",
     "icon": "terminal",
-    "accent": "violet",
+    "accent": "amber",
     "skills": [
       { "name": "Linux",  "color": "#FCC624", "level": "advanced" },
       { "name": "Bash",   "color": "#4EAA25", "level": "intermediate" },
-      { "name": "Python", "color": "#3776AB", "level": "intermediate" }
+      { "name": "Python", "color": "#3776AB", "level": "intermediate" },
+      { "name": "C / C++","color": "#00599C", "level": "intermediate" }
     ]
   }
 ]

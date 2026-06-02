@@ -1,5 +1,29 @@
 [
   {
+    "id": "pi-cloud",
+    "title": "PROJECTS.PI_CLOUD.TITLE",
+    "description": "PROJECTS.PI_CLOUD.DESC",
+    "category": "cloud",
+    "stack": ["OpenStack", "Kubernetes", "Ansible", "Docker", "Spring Boot", "Angular"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69"
+    },
+    "featured": true,
+    "date": "2026-05"
+  },
+  {
+    "id": "ase-visitor",
+    "title": "PROJECTS.ASE_VISITOR.TITLE",
+    "description": "PROJECTS.ASE_VISITOR.DESC",
+    "category": "web",
+    "stack": ["Angular", "Spring Boot", "MySQL", "Git"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/ASE_stage"
+    },
+    "featured": true,
+    "date": "2025-09"
+  },
+  {
     "id": "gamemasterfx",
     "title": "PROJECTS.GAMEMASTER.TITLE",
     "description": "PROJECTS.GAMEMASTER.DESC",
@@ -8,8 +32,8 @@
     "links": {
       "github": "https://github.com/YoussefAbidi69/GameMasterFX"
     },
-    "featured": true,
-    "date": "2024-05"
+    "featured": false,
+    "date": "2025-05"
   },
   {
     "id": "qt-factory",
@@ -21,16 +45,6 @@
       "github": "https://github.com/YoussefAbidi69/Integraation_QT"
     },
     "featured": false,
-    "date": "2023-11"
-  },
-  {
-    "id": "webapp",
-    "title": "PROJECTS.WEBAPP.TITLE",
-    "description": "PROJECTS.WEBAPP.DESC",
-    "category": "web",
-    "stack": ["PHP", "HTML", "CSS", "JavaScript"],
-    "links": {},
-    "featured": false,
-    "date": "2023-06"
+    "date": "2024-05"
   }
 ]
