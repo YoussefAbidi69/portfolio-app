@@ -6,7 +6,7 @@
     "accent": "cyan",
     "skills": [
       { "name": "OpenStack", "color": "#ED1944", "level": "intermediate" },
-      { "name": "AWS",       "color": "#FF9900", "level": "beginner" }
+      { "name": "Azure",       "color": "#0078D4", "level": "beginner" }
     ]
   },
   {
@@ -58,9 +58,7 @@
     "icon": "pipeline",
     "accent": "cyan",
     "skills": [
-      { "name": "GitHub Actions", "color": "#2088FF", "level": "intermediate" },
-      { "name": "Jenkins",        "color": "#D33833", "level": "beginner" },
-      { "name": "GitLab CI",      "color": "#FC6D26", "level": "beginner" }
+      { "name": "GitHub Actions", "color": "#2088FF", "level": "intermediate" }
     ]
   },
   {
