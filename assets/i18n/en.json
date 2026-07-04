@@ -102,7 +102,7 @@
         },
         "DEVOPS_GITOPS": {
             "TITLE": "Production-Inspired DevOps & GitOps Platform",
-            "DESC": "Designed and implemented an end-to-end DevOps & GitOps platform featuring automated CI/CD with Jenkins and Kaniko, GitOps deployments with Argo CD, Kubernetes orchestration using Kind and Helm, NGINX Ingress, Prometheus & Grafana monitoring, and Alertmanager email notifications. Every Git push automatically builds, deploys, monitors, and updates the application through a fully automated pipeline."
+            "DESC": "Designed and implemented an end-to-end DevOps & GitOps platform featuring automated CI/CD with Jenkins and Kaniko, GitOps deployments with Argo CD, Kubernetes orchestration using Kind and Helm, NGINX Ingress, Prometheus & Grafana monitoring, and Alertmanager email notifications. Every Git push automatically builds, deploys,   monitors, and updates the application through a fully automated pipeline."
         }
     },
     "CERTIFICATIONS_SECTION": {
