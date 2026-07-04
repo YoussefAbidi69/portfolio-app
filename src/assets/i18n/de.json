@@ -89,6 +89,10 @@
         "WEBAPP": {
             "TITLE": "Management-Webanwendung",
             "DESC": "PHP-Webanwendung für komplettes Business-Service-Management."
+        },
+        "DEVOPS_GITOPS": {
+            "TITLE": "Eine von der Produktion inspirierte DevOps- und GitOps-Plattform",
+            "DESC": "Entwicklung und Implementierung einer durchgängigen DevOps- und GitOps-Plattform, einschließlich automatisierter kontinuierlicher Integration und kontinuierlicher Bereitstellung (CI/CD) mit Jenkins und Kaniko, GitOps-Bereitstellungen mit Argo CD, Kubernetes-Orchestrierung mithilfe von Kind und Helm, NGINX Ingress, Überwachung über Prometheus und Grafana sowie E-Mail-Benachrichtigungen über Alertmanager. Jeder Git-Push löst dank einer vollständig automatisierten Pipeline automatisch die Kompilierung, Bereitstellung, Überwachung und Aktualisierung der Anwendung aus. Übersetzt mit DeepL.com (kostenlose Version)."
         }
     },
     "CERTIFICATIONS_SECTION": {
