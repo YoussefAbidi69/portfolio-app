@@ -99,6 +99,10 @@
         "WEBAPP": {
             "TITLE": "Application web de gestion",
             "DESC": "Application web PHP assurant la gestion complète d'un service métier."
+        },
+        "DEVOPS_GITOPS": {
+            "TITLE": "Plateforme DevOps et GitOps inspirée de l'environnement de production",
+            "DESC": "Conception et mise en œuvre d'une plateforme DevOps & GitOps de bout en bout comprenant une intégration continue et un déploiement continu (CI/CD) automatisés avec Jenkins et Kaniko, des déploiements GitOps avec Argo CD, l'orchestration Kubernetes à l'aide de Kind et Helm, NGINX Ingress, la surveillance via Prometheus et Grafana, ainsi que des notifications par e-mail via Alertmanager. Chaque push Git déclenche automatiquement la compilation, le déploiement, la surveillance et la mise à jour de l'application grâce à un pipeline entièrement automatisé.Traduit avec DeepL.com (version gratuite) ."
         }
     },
     "CERTIFICATIONS_SECTION": {

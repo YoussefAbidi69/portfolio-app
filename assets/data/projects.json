@@ -12,6 +12,31 @@
     "date": "2026-05"
   },
   {
+    "id": "devops_gitops_platform",
+    "title": "PROJECTS.DEVOPS_GITOPS.TITLE",
+    "description": "PROJECTS.DEVOPS_GITOPS.DESC",
+    "category": "devops",
+    "stack": [
+      "Jenkins",
+      "Kubernetes",
+      "Kind",
+      "Docker",
+      "Kaniko",
+      "Helm",
+      "Argo CD",
+      "NGINX Ingress",
+      "Prometheus",
+      "Grafana",
+      "Alertmanager",
+      "Docker Hub"
+    ],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/gitops-demo-app"
+    },
+    "featured": true,
+    "date": "2026-06"
+  },
+  {
     "id": "ase-visitor",
     "title": "PROJECTS.ASE_VISITOR.TITLE",
     "description": "PROJECTS.ASE_VISITOR.DESC",
