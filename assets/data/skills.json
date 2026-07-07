@@ -6,7 +6,9 @@
     "accent": "cyan",
     "skills": [
       { "name": "OpenStack", "color": "#ED1944", "level": "intermediate" },
-      { "name": "Azure",       "color": "#0078D4", "level": "beginner" }
+      { "name": "Azure",       "color": "#0078D4", "level": "beginner" },
+        { "name": "Azure Container Registry", "color": "#0078D4", "level": "beginner" }
+
     ]
   },
   {
@@ -16,7 +18,9 @@
     "accent": "violet",
     "skills": [
       { "name": "Ansible",   "color": "#EE2622", "level": "intermediate" },
-      { "name": "Terraform", "color": "#7B42BC", "level": "beginner" }
+      { "name": "Terraform", "color": "#7B42BC", "level": "beginner" },
+          { "name": "Helm", "color": "#0F1689", "level": "intermediate" }
+
     ]
   },
   {
@@ -26,7 +30,9 @@
     "accent": "green",
     "skills": [
       { "name": "Docker",     "color": "#2496ED", "level": "advanced" },
-      { "name": "Kubernetes", "color": "#326CE5", "level": "intermediate" }
+      { "name": "Kubernetes", "color": "#326CE5", "level": "intermediate" },
+          { "name": "Kind", "color": "#326CE5", "level": "intermediate" }
+
     ]
   },
   {
@@ -58,7 +64,11 @@
     "icon": "pipeline",
     "accent": "cyan",
     "skills": [
-      { "name": "GitHub Actions", "color": "#2088FF", "level": "intermediate" }
+      { "name": "GitHub Actions", "color": "#2088FF", "level": "intermediate" },
+      { "name": "Jenkins", "color": "#ED1944", "level": "beginner" },
+          { "name": "Argo CD", "color": "#EF7B4D", "level": "intermediate" },
+    { "name": "Kaniko", "color": "#1A73E8", "level": "intermediate" },
+    { "name": "GitOps", "color": "#F05032", "level": "intermediate" }
     ]
   },
   {
@@ -72,5 +82,15 @@
       { "name": "Python", "color": "#3776AB", "level": "intermediate" },
       { "name": "C / C++","color": "#00599C", "level": "intermediate" }
     ]
-  }
+  },
+  {
+  "id": "monitoring",
+  "title": "SKILLS.CATEGORIES.MONITORING",
+  "icon": "activity",
+  "accent": "green",
+  "skills": [
+    { "name": "Prometheus", "color": "#E6522C", "level": "beginner" },
+    { "name": "Grafana", "color": "#F46800", "level": "beginner" }
+  ]
+}
 ]
