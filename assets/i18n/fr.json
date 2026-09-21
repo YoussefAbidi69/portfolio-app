@@ -61,6 +61,12 @@
             "COMPANY": "ASE — Autonomous Systems Engineering",
             "PERIOD": "Août — Sept. 2025",
             "DESC": "Développement d'une application web autonome de gestion des visiteurs externes : intégration de lecteurs code-barres et RFID, traçabilité numérique, reporting PDF/CSV et dashboard d'administration."
+        },
+        "EXCELLIA": {
+            "ROLE": "Stagiaire en cloud engineering",
+            "COMPANY": "Excellia — Ingénierie des systèmes autonomes",
+            "PERIOD": "Oct. 2026 — Fév. 2027",
+            "DESC": "Développement d'une plateforme cloud native avec Kubernetes, Azure et Docker."
         }
     },
     "PROJECTS_SECTION": {
@@ -103,6 +109,10 @@
         "DEVOPS_GITOPS": {
             "TITLE": "Plateforme DevOps et GitOps inspirée de l'environnement de production",
             "DESC": "Conception et mise en œuvre d'une plateforme DevOps & GitOps de bout en bout comprenant une intégration continue et un déploiement continu (CI/CD) automatisés avec Jenkins et Kaniko, des déploiements GitOps avec Argo CD, l'orchestration Kubernetes à l'aide de Kind et Helm, NGINX Ingress, la surveillance via Prometheus et Grafana, ainsi que des notifications par e-mail via Alertmanager. Chaque push Git déclenche automatiquement la compilation, le déploiement, la surveillance et la mise à jour de l'application grâce à un pipeline entièrement automatisé.Traduit avec DeepL.com (version gratuite) ."
+        },
+        "ECOMMERCE_GITOPS_AZURE": {
+            "TITLE": "E-commerce DevOps & GitOps sur Azure",
+            "DESC": "Développement d'une plateforme e-commerce native du cloud en utilisant les services Azure, avec des pipelines CI/CD automatisés, des déploiements GitOps et une surveillance et alerte complètes."
         }
     },
     "CERTIFICATIONS_SECTION": {

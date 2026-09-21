@@ -1,4 +1,17 @@
 [
+      {
+    "id": "excellia-2026",
+    "role": "EXPERIENCES.EXCELLIA.ROLE",
+    "company": "EXPERIENCES.EXCELLIA.COMPANY",
+    "companyUrl": "",
+    "period": "EXPERIENCES.EXCELLIA.PERIOD",
+    "description": "EXPERIENCES.EXCELLIA.DESC",
+    "stack": ["Kubernetes", "Azure", "Docker", "Argo CD", "GitLab CI", "Spring Boot", "Angular"],
+    "links": {
+      "github": "https://github.com/YoussefAbidi69/gitops-ecommerce"
+    },
+    "current": false
+  },
   {
     "id": "ase-2025",
     "role": "EXPERIENCES.ASE.ROLE",

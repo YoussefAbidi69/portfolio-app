@@ -36,6 +36,39 @@
     "featured": true,
     "date": "2026-06"
   },
+    {
+    "id": "ecommerce_gitops_azure",
+    "title": "PROJECTS.ECOMMERCE_GITOPS_AZURE.TITLE",
+    "description": "PROJECTS.ECOMMERCE_GITOPS_AZURE.DESC",
+    "category": "devops",
+    "stack": [
+      "Kubernetes",
+      "Azure",
+      "kubeadm",
+      "Docker",
+      "Spring Boot",
+      "Angular",
+      "PostgreSQL",
+      "CloudNativePG",
+      "PgBouncer",
+      "MongoDB",
+      "Kafka",
+      "Strimzi",
+      "Traefik",
+      "cert-manager",
+      "GitLab CI",
+      "Kustomize",
+      "Argo CD",
+      "Prometheus",
+      "Grafana",
+      "Alertmanager"
+    ],
+    "links": {
+      "github": ""
+    },
+    "featured": true,
+    "date": "2025-08"
+  },
   {
     "id": "ase-visitor",
     "title": "PROJECTS.ASE_VISITOR.TITLE",

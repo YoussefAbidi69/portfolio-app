@@ -59,6 +59,12 @@
             "COMPANY": "ASE — Autonomous Systems Engineering",
             "PERIOD": "Aug. — Sept. 2025",
             "DESC": "Entwicklung einer autonomen Besucherverwaltung mit Barcode- & RFID-Lesern, digitaler Rückverfolgbarkeit, PDF/CSV-Reporting und Admin-Dashboard."
+        },
+        "EXCELLIA": {
+            "ROLE": "Praktikant DevOps & Cloud",
+            "COMPANY": "Excellia — Excellia",
+            "PERIOD": "Juni — Aug. 2026",
+            "DESC": "Entwicklung einer cloud-nativen E-Commerce-Plattform unter Verwendung von Azure-Diensten, einschließlich automatisierter CI/CD-Pipelines, GitOps-Bereitstellungen und umfassender Überwachung und Warnungen."
         }
     },
     "PROJECTS_SECTION": {
@@ -93,6 +99,10 @@
         "DEVOPS_GITOPS": {
             "TITLE": "Eine von der Produktion inspirierte DevOps- und GitOps-Plattform",
             "DESC": "Entwicklung und Implementierung einer durchgängigen DevOps- und GitOps-Plattform, einschließlich automatisierter kontinuierlicher Integration und kontinuierlicher Bereitstellung (CI/CD) mit Jenkins und Kaniko, GitOps-Bereitstellungen mit Argo CD, Kubernetes-Orchestrierung mithilfe von Kind und Helm, NGINX Ingress, Überwachung über Prometheus und Grafana sowie E-Mail-Benachrichtigungen über Alertmanager. Jeder Git-Push löst dank einer vollständig automatisierten Pipeline automatisch die Kompilierung, Bereitstellung, Überwachung und Aktualisierung der Anwendung aus. Übersetzt mit DeepL.com (kostenlose Version)."
+        },
+        "ECOMMERCE_GITOPS_AZURE": {
+            "TITLE": "E-commerce DevOps & GitOps auf Azure",
+            "DESC": "Entwicklung einer cloud-nativen E-commerce-Plattform unter Verwendung von Azure-Diensten, inklusive automatisierter CI/CD-Pipelines, GitOps-Bereitstellungen und umfassender Überwachung sowie Warnungen."
         }
     },
     "CERTIFICATIONS_SECTION": {
