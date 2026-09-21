@@ -61,7 +61,14 @@
             "COMPANY": "ASE — Autonomous Systems Engineering",
             "PERIOD": "Aug — Sep 2025",
             "DESC": "Built an autonomous visitor-management platform with barcode & RFID readers, digital traceability, PDF/CSV reporting, and an admin dashboard."
+        },
+        "EXCELLIA": {
+            "ROLE": "DevOps & Cloud intern",
+            "COMPANY": "Excellia — Excellia",
+            "PERIOD": "Jun — Aug 2026",
+            "DESC": "Developed a cloud-native e-commerce platform using Azure services, with automated CI/CD pipelines, GitOps deployments, and comprehensive monitoring and alerting."
         }
+
     },
     "PROJECTS_SECTION": {
         "NUM": "/04",
@@ -103,6 +110,10 @@
         "DEVOPS_GITOPS": {
             "TITLE": "Production-Inspired DevOps & GitOps Platform",
             "DESC": "Designed and implemented an end-to-end DevOps & GitOps platform featuring automated CI/CD with Jenkins and Kaniko, GitOps deployments with Argo CD, Kubernetes orchestration using Kind and Helm, NGINX Ingress, Prometheus & Grafana monitoring, and Alertmanager email notifications. Every Git push automatically builds, deploys,   monitors, and updates the application through a fully automated pipeline."
+        },
+        "ECOMMERCE_GITOPS_AZURE": {
+            "TITLE": "E-commerce DevOps & GitOps on Azure",
+            "DESC": "Developed a cloud-native e-commerce platform using Azure services, with automated CI/CD pipelines, GitOps deployments, and comprehensive monitoring and alerting."
         }
     },
     "CERTIFICATIONS_SECTION": {
